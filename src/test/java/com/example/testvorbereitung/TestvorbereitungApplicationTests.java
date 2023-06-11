@@ -15,6 +15,11 @@ class TestvorbereitungApplicationTests {
 		var expected = 0.914;
 		var delta=0.001;
 		assertEquals(expected,result, delta);
+  @Test
+	public void inchesToCentimeter() {
+		var result=sut.inchesToCentimeter(1);
+		var expected=2.54;
+		assertEquals(expected,result);
 	}
 
 }
