@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class Controller {
     Implementation j = new Implementation();
     @RequestMapping("/YardToMeter")
-    public double YardToMeter(@RequestParam double yd){
+    public double YardToMeter(@RequestParam double yd) {
 
         return j.YardToMeter(yd);
-
+    }
 
     @RequestMapping("/inchesToCentimeter")
     public double inchesToCentimeter(@RequestParam double in){
